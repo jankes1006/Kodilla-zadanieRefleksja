@@ -8,7 +8,7 @@ public class ReflectiontestPrivate {
         Student student = new Student();
         Field field = Student.class.getDeclaredField("indexNumber");
         field.setAccessible(true);
-        String value = (String)field.get(student);
+        String value = (String) field.get(student);
         System.out.println(value);
     }
 
